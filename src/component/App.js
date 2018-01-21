@@ -1,10 +1,13 @@
 import React, {PropTypes} from 'react';
+import {Link} from 'react-router';
 
 class App extends React.Component {
     render() {
         return (
             <div className="container-fluid">
-                <p>There will be an header...</p>
+                <Link to="Home">Home</Link> | 
+                <Link to="CoursesPage"> Courses</Link> | 
+                <Link to="About"> About</Link>
                 {this.props.children}
             </div>
         );
